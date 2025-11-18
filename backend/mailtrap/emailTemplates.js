@@ -64,3 +64,133 @@ export const verificationEmailTemplate = `
 </body>
 </html>
 `;
+
+
+export const Password_Reset_Request_Template = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      background: #f3faf5;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    .container {
+      max-width: 520px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 14px;
+      border: 1px solid #dcefe3;
+    }
+    h1 {
+      font-size: 22px;
+      color: #1a1a1a;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .button {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 14px 24px;
+      background: #2ecc71;
+      color: white !important;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .button:hover {
+      background: #28b463;
+    }
+    .footer {
+      margin-top: 35px;
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Password Reset Request</h1>
+    <p>If you requested a password reset, click the button below:</p>
+
+    <div style="text-align:center;">
+      <a href="{resetURL}" class="button">Reset Password</a>
+    </div>
+
+    <p>If you did not request this, you can safely ignore this email.</p>
+
+    <div class="footer">This link will expire shortly.</div>
+  </div>
+</body>
+</html>
+`;
+
+
+export const Password_Reset_Sucessfull_Template = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      background: #f3faf5;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    .container {
+      max-width: 520px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 14px;
+      border: 1px solid #dcefe3;
+    }
+    h1 {
+      font-size: 22px;
+      color: #2ecc71;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    .footer {
+      margin-top: 35px;
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Password Reset Successful</h1>
+
+    <p>Your password has been successfully reset.</p>
+    <p>If this wasn’t you, please secure your account immediately.</p>
+
+    <div class="footer">
+      If you need assistance, contact support.
+    </div>
+  </div>
+</body>
+</html>
+`;
+
